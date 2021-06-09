@@ -51,7 +51,7 @@
 * 업로드 한 이력서 PDF 다운로드
 
 * 작성 한 이력서 PDF 변환 후 다운로드
-
+  - 요청이 오면 S3에 PUT을 한 후 리스폰스에 URL 실어보내기
 
 * 이력서 목록 불러오기
   - 해당 유저 정보를 확인 하여 유저가 작성 및 업로드한 이력서 목록 불러오기
@@ -77,25 +77,17 @@
 ### DB
 - Mysql
 - RDS
-- AqueryTool
-- CSV
-- db_uploader
 ### 배포 및 통신
 - Docker
-- EC2
-- S3
-- Postman
-- httpie
-- JSON
+- AWS EC2
+- gunicorn
 ### 기타
+- AWS S3
+- reportlab
 - Google Geocoder
 - Kakao social login API
 - Google social login API
 - Naver social login API
-- JWT
-- bcrypt
-- corsheaders
-- transaction
 
 ## 🔧 Tools
 - <img alt="Trello" src="https://img.shields.io/badge/Trello-%23026AA7.svg?&style=for-the-badge&logo=Trello&logoColor=white"/>
